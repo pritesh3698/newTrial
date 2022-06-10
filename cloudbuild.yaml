@@ -1,4 +1,6 @@
 steps:
+- name: ubuntu
+  args: ['bash', '-c', "echo '$COMMIT_SHA' > REVISION.txt"]
 - name: gcr.io/poc-dna-automation-693335/macydemo
   args:
     - '-m'
@@ -15,7 +17,3 @@ steps:
     - '-r'
     - 'plugins'
     - 'gs://${_GCS_BUCKET}/plugins'
-  # Logging
-options:
-  logging: CLOUD_LOGGING_ONLY
-  #completed
