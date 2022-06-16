@@ -7,7 +7,7 @@ steps:
     - '-d'
     - '-r'
     - 'dags'
-    - 'gs://${_GCS_BUCKET}/dags'
+    - 'gs://${_GCS_BUCKET_02}/dags'
 
 #Logging
 options:
