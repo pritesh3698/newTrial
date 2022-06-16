@@ -7,7 +7,7 @@ steps:
     - '-d'
     - '-r'
     - 'dags'
-    - 'gs://${_GCS_BUCKET_1}.target/dags'
+    - 'gs://${_GCS_BUCKET_1}./dags'
     #Logging
 options:
   logging: CLOUD_LOGGING_ONLY
