@@ -1,6 +1,6 @@
 steps:
 - name: ubuntu
-- name: 'gcr.io/poc-dna-automation-693335/gcr_demo_pract1'
+- name: 'gcr.io/cloud-builders/gsutil'
   args:
     - '-m'
     - 'rsync'
@@ -8,7 +8,7 @@ steps:
     - '-r'
     - 'dags'
     - 'gs://${_GCS_BUCKET}/dags'
-- name: 'gcr.io/poc-dna-automation-693335/gcr_demo_pract1'
+- name: 'gcr.io/cloud-builders/gsutil'
   args:
     - '-m'
     - 'rsync'
